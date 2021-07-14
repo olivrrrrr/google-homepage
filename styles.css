@@ -1,0 +1,241 @@
+/* General CSS */
+
+*{
+    margin: 0; 
+    padding: 0;
+    color: #000; 
+}
+
+body{
+    font-family: arial, 'sans-serif'; 
+    background: #fff; 
+    height: 100%; 
+}
+
+/* fonts */
+
+
+/*header*/ 
+
+.nav-flex-container{
+    display: flex;
+    padding: 40px; 
+    text-decoration: none;
+    margin: 0 auto;  
+    max-width: 100%;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+.nav-flex-container li{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    display: inline-block;
+    list-style-type: none;
+} 
+
+.navbar-right{
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.navbar-left li{
+    margin-left: 10px; 
+}
+
+.navbar-left li a{
+  text-decoration: none; 
+}
+
+.navbar-right li{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 20px; 
+    width: 20px; 
+    margin: 0px 20px; 
+}
+
+.navbar-right li a{
+text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.navbar-right img{
+    border-radius: 30px; 
+    margin-left: -40px; 
+}
+
+.nav-flex-container li:not(:nth-child(3)):hover{
+text-decoration: underline;
+}
+
+.navbar-right .material-icons:hover{
+    height: 25px; 
+    width: 25px; 
+    background-color: rgba(0,0,0,0.1); 
+    padding: 5px; 
+    border-radius: 40px ; 
+}
+
+/* Main */ 
+
+.main-grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 900px;
+    margin: 0 auto; 
+    align-content: center;
+    margin-top: 200px;
+}
+
+.first-row{
+    grid-column: 2/4;
+    grid-row: 1; 
+    margin: 0 auto; 
+}
+
+.second-row{
+    grid-column: 1/5; 
+    grid-row: 2; 
+    margin: 0 auto; 
+}
+
+.third-row{
+    grid-column: 2/4; 
+    grid-row: 3; 
+    margin: 0 auto;
+}
+
+#myInput {
+    background-image: url('https://www.w3schools.com/css/searchicon.png'); /* Add a search icon to input */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    background-position: 10px 12px; /* Position the search icon */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 350px 12px 40px; /* Add some padding */
+    border: 1px solid#dfe1e5; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+    margin: 20px; 
+    border-radius: 60px; 
+  }
+
+  #myInput:hover{
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+}
+
+#myInput:focus{
+    outline: none;
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    background-color: #fff;
+}
+
+/* button */
+
+.third-row button{
+    padding: 10px; 
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa; 
+    color: #3c4043;
+    border-radius: 4px;  
+    font-family: arial,sans-serif;
+font-size: 14px;
+}
+
+.third-row button:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+/* footer */
+
+.footer-flex-container{
+    box-sizing: border-box;
+    text-align: center; 
+}
+
+.footer-flex-child-1{
+    display: flex; 
+    padding: 10px; 
+    margin-bottom: -10px; 
+    width: 100%; 
+    position: fixed; 
+    bottom: 0; 
+    background-color: #f2f2f2;
+    padding-bottom: 10px;
+}
+
+.footer-flex-child-1 p{
+    margin-left: 28px; 
+    color: #70757a; 
+}
+
+.footer-flex-child-2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+    position: absolute; 
+    bottom: 0; 
+    background-color: #f2f2f2; 
+    align-items: center;
+    padding: 10px; 
+    border-top: 1px solid #dadce0;;
+}
+
+.footer-flex-container{
+    background-color: #f2f2f2;
+}
+
+.footer-flex-child-1{
+    position: fixed; 
+    bottom: 50px; 
+ 
+}
+
+.middle-navbar{
+    margin-right: 60px; 
+}
+
+.right-navbar{
+    margin-right: 50px;
+}
+
+.footer-flex-child-2 li{
+    list-style-type: none;
+}
+
+.footer-flex-child-2 a{
+    text-decoration: none;
+    color: #70757a;
+}
+
+
+.footer-flex-child-2 a:hover{
+    text-decoration: underline;
+    color: #70757a;
+}
+
+.left-navbar li{
+    margin-left: 30px; 
+    display: inline-block; 
+}
+
+.middle-navbar li{
+    display: inline-block; 
+}
+
+.right-navbar li{
+    margin-left: 40px; 
+    display: inline-block; 
+}
+
+.middle-navbar li img{
+    height: 15px; 
+}
